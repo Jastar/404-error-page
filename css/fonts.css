@@ -1,0 +1,29 @@
+/* font-family: "MerriweatherRegular"; */
+@font-face {
+	font-family: "MerriweatherRegular";
+	src: url("../fonts/MerriweatherRegular/Merriweather-Regular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "MerriweatherLight"; */
+@font-face {
+	font-family: "MerriweatherLight";
+	src: url("../fonts/MerriweatherLight/Merriweather-Light.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "MerriweatherBold"; */
+@font-face {
+	font-family: "MerriweatherBold";
+	src: url("../fonts/MerriweatherBold/Merriweather-Bold.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* font-family: "Iskoola"; */
+@font-face {
+	font-family: "Iskoola";
+	src: url("../fonts/Iskoola/iskoolapota.ttf");
+	font-style: normal;
+	font-weight: normal;
+}

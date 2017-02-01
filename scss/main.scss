@@ -1,0 +1,164 @@
+﻿@mixin font ($size:null, $height:null, $family:null, $color:null) {
+	font-size: $size;
+	line-height: $height;
+	font-family: $family;
+	color: $color;
+}
+
+
+
+
+h1 {
+	@include font(200px, 30px, "MerriweatherBold", #424242);
+	font-weight: 700;
+	margin: 140px auto 0px auto;
+}
+
+h2 {
+	@include font(36.71px, 36.71px, "Iskoola", #fff);
+	background-color: #ff9311;
+	margin: 125px auto 0px auto;
+	width: 50px;
+	height: 50px;
+	padding: 8px;
+}
+
+h3 {
+	@include font(25.52px, 30.62px, "MerriweatherBold", #000000);
+	margin: 28px auto 15px auto;
+	font-weight: bold;
+	letter-spacing: 5px;
+
+}
+
+h4 {
+	@include font(25.52px, 30.62px, "Microsoft Himalaya", #000000);
+	letter-spacing: 15px;
+}
+
+h5 {
+	@include font(20px,24px, "MerriweatherRegular", #424242);
+	margin: 0 auto;
+}
+
+h6 {
+	@include font();
+}
+
+p {
+	@include font(14px, 24px, "MerriweatherLight", #424242);
+}
+
+
+
+/********************************************  CONTENT ********************************************/
+
+	section#content {
+		form {
+			position: relative;
+			margin-top: 50px;
+			max-width: 640px;
+			margin: 140px auto 35px auto;
+
+				input[type="search"] {
+					border: none;
+					border: 1px solid #999999;
+					width: 90%;
+					padding: 20px;
+					outline: none;
+					@include font(14px, 24px, "MerriweatherLight", #999999);
+				}
+
+				input[type="submit"] {
+					border: 1px solid #999;
+					background-color: #ff9211;
+					padding: 18px;
+					outline: none;
+					min-width: 130px;
+					@include font(14px, 28px, "MerriweatherLight", #fff);
+					position: absolute; top: 0; right: 0;
+
+					&:active, {
+						background-color: #cb7510;
+					}
+				}
+		}
+
+		p {
+			margin: 30px auto 25px auto;
+			text-indent: 40px;
+		}
+
+
+		& a {
+			@include font(14px, 24px, "MerriweatherLight", #363636);
+			padding: 3px;
+			-webkit-transition: color 0.5s;
+			-o-transition: color 0.5s;
+			transition: color 0.5s;
+
+			span {
+				@include font(18px, 60px, $color: #ff9211);
+			}
+
+			&:hover {text-decoration: none; color: #ff9211; border-bottom: 1px solid };
+		}
+
+	}
+
+
+
+
+
+/********************************************  CONTENT ********************************************/
+
+
+/********************************************  FOOTER ********************************************/
+
+	footer {
+		
+		a {
+			color: #ff9311;
+
+			&:hover {text-decoration: none;};
+		}
+
+
+
+
+		ul#social {
+			padding: 0px;
+			margin: 95px auto 15px auto;
+			
+			li {
+				display: inline;
+
+				a {
+					@include font(13px, 24px, $color: #999999);
+					margin: 0px auto;
+					padding: 2px 10px;
+					border-right: 1px solid #999999;
+					-webkit-transition: color 0.5s;
+					-o-transition: color 0.5s;
+					transition: color 0.5s;
+
+					&:hover {
+						color: #ff9311;
+					};
+				}
+			}
+		}
+
+		p {
+			margin: 0 auto;
+			color: #999999;
+		}
+
+		p:nth-child(3) {
+			margin-bottom: 120px;
+		}
+
+	}
+
+
+/********************************************  FOOTER ********************************************/
